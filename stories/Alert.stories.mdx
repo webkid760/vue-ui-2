@@ -1,0 +1,21 @@
+import { Meta, Story, Props, Preview} from '@storybook/addon-docs/blocks';
+import Alert from '../components/alert';
+
+<Meta title='Alert' component={Alert} />
+
+# Alert
+
+Some **markdown** description, or whatever you want.
+
+<Preview>
+<Story name='basic'>
+      {{
+		  components: { Alert },
+		  template: `<alert title="成功提示的文案" type="error"></alert>`
+      }}
+</Story>
+</Preview>
+
+## Props
+
+<Props of={Alert} />
